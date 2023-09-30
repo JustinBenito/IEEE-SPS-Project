@@ -14,7 +14,7 @@ const Nav = () => {
     <h1 className='md:text-xl font-bold text-sm'>Department of Electronics and Communication</h1>
     </div>
     <a href="https://signalprocessingsociety.org/community-involvement/seasonal-schools" class="flex items-center">
-        <img src="https://signalprocessingsociety.org/sites/default/files/uploads/images/logos/New_SPS_Logos/Color/RGB/SPS_Logo_Color_RGB.jpg" class="md:h-24 h-24" alt="Flowbite Logo" />   
+        <img src="https://signalprocessingsociety.org/sites/default/files/uploads/images/logos/sps_75anniv_logos/CMYK/SPS_75Years_Color_CMYK.jpg" class="md:h-24 h-24" alt="Flowbite Logo" />   
     </a>
   </div>
 </nav>
