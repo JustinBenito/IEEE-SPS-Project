@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="list-unstyled text-sm">
               <li>
                 <a
-                  href="https://signalprocessingsociety.org/publications/"
+                  href="https://signalprocessingsociety.org/"
                   className="text-white hover:underline"
                 >
                   Publications
@@ -28,7 +28,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://signalprocessingsociety.org/conferences/"
+                  href="https://signalprocessingsociety.org/"
                   className="text-white hover:underline"
                 >
                   Conferences
@@ -36,7 +36,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://signalprocessingsociety.org/education/"
+                  href="https://signalprocessingsociety.org"
                   className="text-white hover:underline"
                 >
                   Education
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://signalprocessingsociety.org/membership/"
+                  href="https://signalprocessingsociety.org/"
                   className="text-white hover:underline"
                 >
                   Membership
