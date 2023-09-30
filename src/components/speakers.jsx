@@ -1,34 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import hemaImage from '../assets/hema.jpg';
+import maha from '../assets/maha.jpg';
+import naga from '../assets/naga.jpg';
+import umesh from '../assets/umesh.jpeg';
+import deep from '../assets/deep.jpeg';
 
 const speakersData = [
      {
       name: "Dr. Hema A Murthy",
-      imagePath: "http://www.cse.iitm.ac.in/images/HAM.jpg",
+      imagePath: hemaImage,
       designation: "Professor",
       college: "CSE, IIT Madras"
     },
     {
       name: "Dr. S Umesh",
-      imagePath: "https://www.ee.iitm.ac.in/umeshs/umesh.JPG",
+      imagePath: umesh,
       designation: "Professor",
       college: "CSE, IIT Madras"
     },
     {
       name: "Dr. S. R. Mahadeva Prasanna",
-      imagePath: "https://lh3.googleusercontent.com/1M4lnMDxbByUoX9AqMdmrEaWfAzpYBWuFbrcx9_fIj7YzqT7Wts9By3eJbsJuQUDpitfo28L9BlvpqXNDMDuD9Qd_742JVf76iYJrvGxm_8dGn0d=w1280",
+      imagePath: maha,
       designation: "Professor",
       college: "IIT Dharwad"
     },
     {
       name: "Dr. T Nagarajan",
-      imagePath: "https://i1.rgstatic.net/ii/profile.image/904167602278400-1592581763539_Q512/T-Nagarajan.jpg",
+      imagePath: naga,
       designation: "Professor and Head of Department of CSE",
       college: "SNU Chennai"
     },
     {
       name: "Dr. K. T Deepak",
-      imagePath: "https://iiitdwd.ac.in/img/faculty/deepak.jpeg",
+      imagePath: deep,
       designation: "Assistant Professor",
       college: "IIIT Dharwad"
     }
