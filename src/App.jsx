@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import NET from 'vanta/src/vanta.net';
 import './App.css';
+import { useRef } from 'react';
 import Nav from './components/nav';
 import Heading from './components/heading';
 import Organiser from './components/organiser';
@@ -25,14 +26,17 @@ function App() {
     });
   }, []);
 
+  const speakerRef = useRef(null);
+
+
   return (
     <>
-      <Nav />
+      <Nav ref={speakerRef}/>
       <div className='flex justify-center items-center min-h-[400px]' id='bg' >
         <Heading />
       </div>
       <Organiser />
-      <Speakers />
+      <Speakers ref={speakerRef}/>
       <About />
       <Footer />
     </>

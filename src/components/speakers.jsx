@@ -6,6 +6,8 @@ import naga from '../assets/naga.jpg';
 import umesh from '../assets/umesh.jpeg';
 import deep from '../assets/deep.jpeg';
 
+import { forwardRef } from 'react';
+
 const speakersData = [
      {
       name: "Dr. Hema A Murthy",
@@ -35,12 +37,12 @@ const speakersData = [
       name: "Dr. K. T Deepak",
       imagePath: deep,
       designation: "Assistant Professor",
-      college: "IIIT Dharwad"
+      college: "IIIT Dhanbad"
     }
   
 ];
 
-const Speakers = () => {
+const Speakers = React.forwardRef((props, ref) => {
     const [isFlipped, setIsFlipped] = useState(Array(speakersData.length).fill(false));
   
     const handleMouseEnter = (index) => () => {
@@ -70,7 +72,7 @@ const Speakers = () => {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
     return (
-<div className='max-w-5xl mx-auto '>
+<div className='max-w-5xl mx-auto ' ref={ref}>
         <h1 className='text-3xl text-center p-4 font-bold mt-5 border-b-2'>Speakers</h1>
   
         <div className='flex flex-wrap justify-center'>
@@ -119,6 +121,8 @@ const Speakers = () => {
         </div>
       </div>
     );
-  };
+  }
+)
+
 
 export default Speakers;
