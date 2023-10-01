@@ -2,7 +2,7 @@ import React from 'react';
 
 const Organiser = () => {
   return (
-    <div className='text-center mt-5 border-gray-100 max-w-6xl mx-auto '>
+    <div className='text-center mt-5 border-gray-100 max-w-5xl mx-auto '>
       <h1 className='text-3xl p-4 font-bold border-b-2 mb-6'>Organiser</h1>
 
       {/* Centered circular image */}

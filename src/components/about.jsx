@@ -20,10 +20,10 @@ const About = () => {
         The primary focus of the IEEE SPS Seasonal School in 2024 is to delve into the cutting-edge approaches in Signal Processing Guided Machine Learning for Speech and Audio Applications.
         </h1>
         <p className='mb-4'>
-        This meticulously crafted program will offer participants a comprehensive course that explores recent advances and state-of-the-art techniques in this rapidly evolving field. Just as in previous years, we aim to provide an engaging and informative experience for all attendees.
+        This seasonal school aims at reinstating signal processing as the foundation of speech and audio signal processing, and aims to explain why it is still relevant. It aims to show that even though signal processing methods are not the only way to solve modern day pattern recognition problems, the principles are still relevant.
         </p>
         <p className='mb-4'>
-          The School is opened to the grand fraternity of SPS members throughout the world. Welcomes participation of Ph.D. students, practitioners, UG, and PG students to have a strong focus on signal processing. The lectures and the live online interactions would be the most significant part of the program.
+        The topics in this workshop are aimed to provide students and researchers with the right tools to navigate the array of modern day research problems, and show that signal processing methods can guide design choices in machine learning algorithms.
         </p>
       </div>
     </div>

@@ -8,6 +8,7 @@ import Organiser from './components/organiser';
 import Speakers from './components/speakers';
 import About from './components/about';
 import Footer from './components/footer';
+import Scope from './components/scope';
 
 function App() {
   useEffect(() => {
@@ -35,8 +36,10 @@ function App() {
       <div className='flex justify-center items-center min-h-[400px]' id='bg' >
         <Heading />
       </div>
+      <Scope />
       <Organiser />
       <Speakers ref={speakerRef}/>
+
       <About />
       <Footer />
     </>

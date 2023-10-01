@@ -16,6 +16,12 @@ const speakersData = [
       college: "CSE, IIT Madras"
     },
     {
+        name: "Dr. T Nagarajan",
+        imagePath: naga,
+        designation: "Professor and Head of Department of CSE",
+        college: "SNU Chennai"
+      },
+    {
       name: "Dr. S Umesh",
       imagePath: umesh,
       designation: "Professor",
@@ -27,12 +33,7 @@ const speakersData = [
       designation: "Professor",
       college: "IIT Dharwad"
     },
-    {
-      name: "Dr. T Nagarajan",
-      imagePath: naga,
-      designation: "Professor and Head of Department of CSE",
-      college: "SNU Chennai"
-    },
+
     {
       name: "Dr. K. T Deepak",
       imagePath: deep,
