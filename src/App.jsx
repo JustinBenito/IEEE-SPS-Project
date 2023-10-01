@@ -37,10 +37,9 @@ function App() {
         <Heading />
       </div>
       <Scope />
-      <Organiser />
       <Speakers ref={speakerRef}/>
-
       <About />
+      <Organiser />
       <Footer />
     </>
   );

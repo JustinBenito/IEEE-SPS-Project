@@ -11,9 +11,6 @@ All these networks combined, can directly learn to transform speech in one langu
 processing, and embrace the higher abstractions of this knowledge, wherein thoughts of <strong>“signals”</strong> fade away to pave way for an all encompassing term <strong>“data”</strong>.
      </p>
     <br/>
-        <p className='text-justify md:text-lg text-sm p-4'>
-        This seasonal school aims at reinstating signal processing as the foundation of speech and audio signal processing, and aims to explain why it is still relevant. It aims to show that even though signal processing methods are not the only way to solve modern day pattern recognition problems, the principles are still relevant. The topics in this workshop are aimed to provide students and researchers with the right tools to navigate the array of modern day research problems, and show that signal processing methods can guide design choices in machine learning algorithms.
-        </p>
     </div>
 
   )
