@@ -1,5 +1,5 @@
 import React from 'react';
-import Mam from '../assets/mam.jpg'
+import Mam from '../assets/mam.png'
 const Organiser = () => {
   return (
     <div className='text-center mt-5 border-gray-100 max-w-5xl mx-auto mb-12'>
