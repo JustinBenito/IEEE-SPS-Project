@@ -18,7 +18,7 @@ const Nav = React.forwardRef((props, ref) => {
         <img src="https://www.ssn.edu.in/wp-content/uploads/2019/12/logo.jpg" className="md:w-32 md:h-16 w-24" alt="SSN Logo" />   
     </a>
     <div className='flex-col flex text-center'>
-    <h1 className='md:text-5xl font-bold text-xl text-[#005197]'><span className='italic'>SSN</span>  College of Engineering</h1>
+    <h1 className='md:text-5xl font-bold text-xl text-[#005197]'>Sri Sivasubramaniya Nadar <br></br> College of Engineering</h1>
     <h1 className='md:text-xl font-bold text-sm'>Department of Electronics and Communication</h1>
     </div>
     <a href="https://signalprocessingsociety.org/community-involvement/seasonal-schools" class="flex items-center">
@@ -31,16 +31,16 @@ const Nav = React.forwardRef((props, ref) => {
     <div className="max-w-screen-xl px-4 py-3 mx-auto">
         <ul className="flex flex-row justify-between items-center w-full font-medium  text-sm">
             <li>
-                <a href="#" className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                <a href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">HOME</a>
             </li>
             <li>
-                <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline">Speakers</a>
+                <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
             </li>
             <li>
-                <a href="https://signalprocessingsociety.org/" className="text-gray-900 dark:text-white hover:underline">IEEE SPS</a>
+                <a href="https://signalprocessingsociety.org/" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
             </li>
             <li>
-                <a href="https://www.ssn.edu.in" className="text-gray-900 dark:text-white hover:underline">SSNCE</a>
+                <a href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">UPDATES</a>
             </li>
         </ul>
     </div>
