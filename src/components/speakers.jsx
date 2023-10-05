@@ -94,10 +94,10 @@ const Speakers = React.forwardRef((props, ref) => {
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
   return (
-    <div className='max-w-5xl mx-auto' ref={refInView}>
-      <h1 className='text-3xl text-center p-4 font-bold mt-5 border-b-2' ref={ref}>Speakers</h1>
+    <div className='max-w-5xl mx-auto' ref={refInView} id="speaker">
+      <h1 className='text-3xl text-center p-4 font-bold mt-5 border-b-2' >Speakers</h1>
       {inView && (
-        <motion.div className='flex flex-wrap justify-center' >
+        <motion.div className='flex flex-wrap justify-center' ref={ref}>
           {speakersData.map((speaker, index) => (
             <motion.div
               key={index}

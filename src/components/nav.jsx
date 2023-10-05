@@ -2,11 +2,18 @@ import React, { useState, useRef } from 'react';
 
 const Nav = React.forwardRef((props, ref) => {
   const onSpeaker = () => {
-    console.log(ref);
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+    console.log(ref)
+    // if (ref.current) {
+    //   ref.current.scrollIntoView({ behavior: 'smooth' });
+    // }
+    const targetElement = document.getElementById('speaker');
+    console.log(targetElement) // Replace 'targetComponent' with the actual ID of your target component
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' }); // You can customize the scrolling behavior
     }
+  
   };
+
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -49,31 +56,23 @@ const Nav = React.forwardRef((props, ref) => {
       </nav>
 
       <nav className="bg-gray-50 dark:bg-gray-700">
-        <div className="max-w-screen-xl px-4 py-3 mx-auto">
-          <ul className="flex flex-row justify-between items-center w-full font-medium text-sm">
+    <div className="max-w-screen-xl px-4 py-3 mx-auto">
+        <ul className="flex flex-row justify-between items-center w-full font-medium  text-sm">
             <li>
-              <a href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">
-                HOME
-              </a>
+                <a href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">HOME</a>
             </li>
             <li>
-              <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">
-                SPEAKERS
-              </a>
+                <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
             </li>
             <li>
-              <a onClick={openModal} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">
-                SCHEDULE
-              </a>
+                <a onClick={openModal} href="https://signalprocessingsociety.org/" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
             </li>
             <li>
-              <a onClick={openModal} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">
-                UPDATES
-              </a>
+                <a onClick={openModal} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">UPDATES</a>
             </li>
-          </ul>
-        </div>
-      </nav>
+        </ul>
+    </div>
+</nav>
 
       {/* Modal */}
       {isModalOpen && (
