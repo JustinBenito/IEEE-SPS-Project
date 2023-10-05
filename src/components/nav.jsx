@@ -65,7 +65,7 @@ const Nav = React.forwardRef((props, ref) => {
                 <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
             </li>
             <li>
-                <a onClick={openModal} href="https://signalprocessingsociety.org/" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
+                <a onClick={openModal} href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
             </li>
             <li>
                 <a onClick={openModal} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">UPDATES</a>
