@@ -23,7 +23,7 @@ const About = () => {
         This meticulously crafted program will offer participants a comprehensive course that explores recent advances and state-of-the-art techniques in this rapidly evolving field. We aim to provide an engaging and informative experience for all attendees.
         </p>
         <p className='mb-4'>
-          The School is opened to the grand fraternity of SPS members throughout the world. Welcomes participation of Ph.D. students, practitioners, UG, and PG students to have a strong focus on signal processing. The lectures and the live online interactions would be the most significant part of the program.
+          The School is opened to the grand fraternity of SPS members throughout the world.
         </p>
       </div>
     </div>

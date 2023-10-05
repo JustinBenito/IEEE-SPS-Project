@@ -13,31 +13,36 @@ const speakersData = [
     name: "Dr. Hema A. Murthy",
     imagePath: hemaImage,
     designation: "Professor",
-    college: "CSE, IIT Madras"
+    college: "CSE, IIT Madras",
+    profile: "http://www.cse.iitm.ac.in/profile.php?arg=Mjk="
   },
   {
     name: "Dr. T. Nagarajan",
     imagePath: naga,
     designation: "Professor and Head of Department of CSE",
-    college: "SNU Chennai"
+    college: "SNU Chennai",
+    profile: "https://www.snuchennai.edu.in/dr-t-nagarajan/"
   },
   {
     name: "Dr. S. Umesh",
     imagePath: umesh,
     designation: "Professor",
-    college: "CSE, IIT Madras"
+    college: "CSE, IIT Madras",
+    profile: "https://www.ee.iitm.ac.in/umeshs/"
   },
   {
     name: "Dr. S. R. Mahadeva Prasanna",
     imagePath: maha,
     designation: "Professor",
-    college: "IIT Dharwad"
+    college: "IIT Dharwad",
+    profile: "https://sites.google.com/iitdh.ac.in/prasanna/home"
   },
   {
     name: "Dr. K. T Deepak",
     imagePath: deep,
     designation: "Assistant Professor",
-    college: "IIIT Dhanbad"
+    college: "IIIT Dharwad",
+    profile: "https://iiitdwd.ac.in/Dr.Deepak.php"
   }
 ];
 
@@ -90,9 +95,9 @@ const Speakers = React.forwardRef((props, ref) => {
 
   return (
     <div className='max-w-5xl mx-auto' ref={refInView}>
-      <h1 className='text-3xl text-center p-4 font-bold mt-5 border-b-2'>Speakers</h1>
+      <h1 className='text-3xl text-center p-4 font-bold mt-5 border-b-2' ref={ref}>Speakers</h1>
       {inView && (
-        <motion.div className='flex flex-wrap justify-center' ref={containerRef}>
+        <motion.div className='flex flex-wrap justify-center' >
           {speakersData.map((speaker, index) => (
             <motion.div
               key={index}
@@ -103,6 +108,7 @@ const Speakers = React.forwardRef((props, ref) => {
               animate={controls}
               custom={index} // Pass the index as a custom prop
             >
+      <a href={speaker.profile} target="_blank" rel="noopener noreferrer">
               <ReactCardFlip
                 isFlipped={isFlipped[index]}
                 flipDirection="horizontal"
@@ -113,16 +119,20 @@ const Speakers = React.forwardRef((props, ref) => {
               >
                 {/* Front of the card */}
                 <div>
+
                   <div
                     className='w-64 h-64 rounded-full overflow-hidden cursor-pointer'
                   >
                     <img
                       src={speaker.imagePath}
                       alt={speaker.name}
+                      href={speaker.profile}
                       className='object-cover w-full h-full'
                     />
+                    
                   </div>
                   <p className='text-xl font-semibold text-black'>{speaker.name}</p>
+
                 </div>
 
                 {/* Back of the card */}
@@ -135,6 +145,7 @@ const Speakers = React.forwardRef((props, ref) => {
                   )}
                 </div>
               </ReactCardFlip>
+              </a>
             </motion.div>
           ))}
         </motion.div>
