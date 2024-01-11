@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center py-4">
           <div className="w-full">
             <p className="text-sm text-center">
-              Copyright © 2023 IEEE Signal Processing Society. All rights
+              Copyright © 2024 IEEE Signal Processing Society. All rights
               reserved.
             </p>
           </div>
