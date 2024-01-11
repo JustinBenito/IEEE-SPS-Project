@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 
  const Scope = () => {
 
-    const controls = useAnimation();
+  const controls = useAnimation();
   const [ref, inView] = useInView();
 
   const animation = {

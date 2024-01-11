@@ -3,7 +3,12 @@ import ReactCardFlip from 'react-card-flip';
 import hemaImage from '../assets/hema.jpg';
 import maha from '../assets/maha.jpg';
 import naga from '../assets/naga.jpg';
+import anushiya from '../assets/anushiya.jpeg'
+import swetha from '../assets/swetha.jpeg';
 import umesh from '../assets/umesh.jpeg';
+import prasant from '../assets/prasant.jpg';
+import ksrm from '../assets/ksrm.jpg'
+import Mam from '../assets/mam.png'
 import deep from '../assets/deep.jpeg';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -20,7 +25,7 @@ const speakersData = [
     name: "Dr. T. Nagarajan",
     imagePath: naga,
     designation: "Professor and Head of Department of CSE",
-    college: "SNU Chennai",
+    college: "Shiv Nadar University, Chennai",
     profile: "https://www.snuchennai.edu.in/dr-t-nagarajan/"
   },
   {
@@ -34,15 +39,50 @@ const speakersData = [
     name: "Dr. S. R. Mahadeva Prasanna",
     imagePath: maha,
     designation: "Professor",
-    college: "IIT Dharwad",
+    college: "EE, IIT Dharwad",
     profile: "https://sites.google.com/iitdh.ac.in/prasanna/home"
   },
   {
     name: "Dr. K. T Deepak",
     imagePath: deep,
     designation: "Assistant Professor",
-    college: "IIIT Dharwad",
+    college: "ECE, IIIT Dharwad",
     profile: "https://iiitdwd.ac.in/Dr.Deepak.php"
+  },
+  {
+    name: "Dr. P Vijayalakshmi",
+    imagePath: Mam,
+    designation: "Professor and Head of the Department of ECE",
+    college: "SSN College of Engineering",
+    profile: "https://www.ssn.edu.in/staff-members/dr-p-vijayalakshmi/"
+  },
+  {
+    name: "Dr. G. Anushiya                             Rachel",
+    imagePath: anushiya,
+    designation: "Assistant Professor ",
+    college: "CSE, Shiv Nadar University, Chennai",
+    profile: "https://www.snuchennai.edu.in/faculty/dr-anushiya-rachel"
+  },
+  {
+    name: "       Dr. Prasanta Kumar                      \n                         Ghosh      ",
+    imagePath: prasant,
+    designation: "Associate Professor",
+    college: "EE, Indian Institute of Science (IISc), Bangalore",
+    profile: "https://eecs.iisc.ac.in/people/prasanta-kumar-ghosh/"
+  },
+  {
+    name: "Dr. Sri Rama Murty        Kodukula",
+    imagePath: ksrm,
+    designation: "Professor",
+    college: " EE, IIT Hyderabad",
+    profile: "https://iith.ac.in/ee/ksrm/"
+  },
+  {
+    name: "Ms. Shwetha Somasundaram",
+    imagePath: swetha,
+    designation: "Research Associate",
+    college: "Adobe",
+    profile: "https://www.linkedin.com/in/shwetha-s-0312/?originalSubdomain=in"
   }
 ];
 
@@ -136,13 +176,16 @@ const Speakers = React.forwardRef((props, ref) => {
                 </div>
 
                 {/* Back of the card */}
-                <div className='flex flex-col justify-center items-center bg-[#005197] gap-3 rounded-full w-64 h-64 overflow-hidden'>
-                  <p className='text-xl text-white font-semibold'>{speaker.name}</p>
+                <div>
+                <div className='flex p-8 flex-col justify-center items-center bg-[#005197] gap-3 rounded-full w-64 h-64 overflow-hidden'>
+                  <p className='text-lg text-white font-semibold overflow-auto'>{speaker.name}</p>
                   <p className='text-lg text-white opacity-40'>{speaker.designation}</p>
                   <p className='text-md text-black'>{speaker.college}</p>
                   {isMobile && (
                     <button onClick={handleMouseLeave(index)} className='bg-white p-1 rounded-lg'>Click to flip</button>
                   )}
+                </div>
+                <p className='text-xl font-semibold text-black'>{speaker.name}</p>
                 </div>
               </ReactCardFlip>
               </a>

@@ -25,6 +25,15 @@ const Nav = React.forwardRef((props, ref) => {
     setIsModalOpen(false);
   };
 
+  const openSchedule = () => {
+    window.open("https://drive.google.com/file/d/1-GbMdBgcVwIVPU-dUqHPI7nZLZuhpOzl/view?usp=sharing", '_blank')
+  }
+
+  const onRegister = () => {
+    window.open("https://forms.gle/3bmMTgevnjDpcYUZA", '_blank')
+  }
+
+
   return (
     <>
       <nav className="bg-white border-b-4 border-[#005197] dark:bg-gray-900">
@@ -65,10 +74,10 @@ const Nav = React.forwardRef((props, ref) => {
                 <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
             </li>
             <li>
-                <a onClick={openModal} href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
+                <a onClick={openSchedule} href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SCHEDULE</a>
             </li>
             <li>
-                <a onClick={openModal} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">UPDATES</a>
+                <a onClick={onRegister} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">REGISTER</a>
             </li>
         </ul>
     </div>
