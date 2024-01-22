@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className=' mt-5 border-gray-100 max-w-5xl mx-auto gap-2 relative text-white'>
+    <div className=' mt-5 border-gray-100 max-w-5xl px-2 mx-auto gap-2 relative text-white'>
 <div
   className=' p-4 rounded-xl'
   style={{

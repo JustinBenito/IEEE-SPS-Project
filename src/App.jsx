@@ -46,7 +46,7 @@ function App() {
       <Speakers ref={speakerRef}/>
       <About />
       <FAQ />
-      {/* <Schedule /> */}
+      <Schedule />
       <Organiser />
       <Footer />
     </>

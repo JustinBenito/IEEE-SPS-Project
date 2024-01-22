@@ -1,133 +1,173 @@
 import React from 'react';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Schedule = () => {
+
+const speakers = [
+{
+date: "05.02.2024 · Monday",
+session: "Forenoon",
+speaker: "Dr. Hema A. Murthy",
+uni: `Professor/CSE \n
+Indian Institute of Technology Madras`,
+title: "Signal Processing Guided Machine Learning",
+day: "Day-1",
+bg: "#e4f6f8",
+icon: "#0e4c92"
+},
+{
+  date: "05.02.2024 · Monday",
+  session: "Afternoon",
+  speaker: "Dr. T. Nagarajan",
+  uni: `Professor & Head/CSE, \n
+  Shiv Nadar University, Chennai`,
+  title: "Signal Processing for Machine Learning",
+  day: "Day-1",
+  bg: "#e4f6f8",
+  icon: "#0e4c92"
+},
+{
+  date: "06.02.2023 · Tuesday",
+  session: "Forenoon",
+  speaker: "Dr. S. R. Mahadeva Prasanna",
+  uni: `Professor/CSE \n
+  Indian Institute of Technology Dharwad`,
+  title: "Speaker Recognition and Machine Learning",
+  day: "Day-2",
+  bg: "#FED7C2",
+  icon: "#FF4C00"
+},
+{
+  date: "06.02.2023 · Tuesday",
+  session: "Afternoon",
+  speaker: "Dr. Sri Rama Murty Kodukula",
+  uni: `Professor/EE \n
+  Indian Institute of Technology Hyderabad`,
+  title: "Neural Comb Filtering for Speech Enhancement",
+  day: "Day-2",
+  bg: "#FED7C2",
+  icon: "#FF4C00"
+},
+{
+  date: "07.02.2023 · Wednesday",
+  session: "Forenoon",
+  speaker: "Dr. Prasanta Kumar Ghosh",
+  uni: `Associate Professor/EE
+  Indian Institute of Science Bengaluru`,
+  title: "Challenges and Opportunities in Dysarthric Speech Processing",
+  day: "Day-3",
+  bg: "#FFCCCB",
+  icon: "#610c04"
+},
+{
+  date: "07.02.2023 · Wednesday",
+  session: "Afternoon",
+  speaker: "Dr. P. Vijayalakshmi",
+  uni: `Professor & Head/ECE,
+  Sri Sivasubramaniya Nadar
+  College of Engineering, Chennai.`,
+  title: "Assistive Speech Technology",
+  day: "Day-3",
+  bg: "#FFCCCB",
+  icon: "#610c04"
+},
+
+{
+  date: "08.02.2023 · Thursday",
+  session: "Forenoon",
+  speaker: "Dr. G. Anushiya Rachel",
+  uni: `Assistant Professor/CSE,
+  Shiv Nadar University, Chennai`,
+  title: "Towards Human-like speech synthesis?",
+  day: "Day-4",
+  bg: "#CFFED5",
+  icon: "#2DBD01"
+},
+
+{
+  date: "08.02.2023 · Thursday",
+  session: "Afternoon",
+  speaker: "Dr. S. Umesh",
+  uni: `Professor/CSE
+  Indian Institute of Technology Madras`,
+  title: "Self-supervised Learning Algorithms for Speech Recognition",
+  day: "Day-4",
+  bg: "#CFFED5",
+  icon: "#2DBD01"
+},
+
+{
+  date: "09.02.2023 · Friday",
+  session: "Forenoon",
+  speaker: "Dr. K. T. Deepak",
+  uni: `Assistant Professor/CSE
+  Indian Institute of Information Technology
+  Dharwad`,
+  title:"Role of Transformer models in Speech Technology",
+  day: "Day-5",
+  bg: "#fff0f5",
+  icon: "#551a8b"
+},
+
+{
+  date: "09.02.2023 · Friday",
+  session: "Afternoon",
+  speaker: "Ms. Shwetha Somasundaram",
+  uni: `Research Associate, Adobe`,
+  title: "Large Language Models",
+  day: "Day-5",
+  bg: "#fff0f5",
+  icon: "#551a8b"
+},
+]
+
+
   return (
-    <div className='mt-5 border-gray-100 max-w-5xl mx-auto mb-12'>
-      <h1 className='text-3xl p-4 font-bold border-b-2 mb-6 text-center'>Schedule</h1>
-      
-      <ol className="relative border-l border-gray-200 dark:border-gray-700">
-        
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 1</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Signal Processing Guided Machine Learning</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. Hema A. Murthy</span> <br/>
-            Senior Member IEEE <br/>
-            Professor, Department of Computer Science and Engineering <br/>
-            Indian Institute of Technology Madras <br/>
-            Chennai, India
-          </p>
-        </li>
-
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 1</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Speech signal processing - from features to modelling</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. T. Nagarajan</span> <br/>
-            Professor and Head, <br/>
-            Department of Computer Science and Engineering <br/>
-            Shiv Nadar University, <br/>
-            Chennai, India
-          </p>
-        </li>
-
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 2</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Automatic Speech Recognition Systems for Indian Languages</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. Umesh</span> <br/>
-            Professor, Department of Computer Science and Engineering <br/>
-            Indian Institute of Technology, Madras <br/>
-            Chennai, India
-          </p>
-        </li>
-
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 2</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Large Language Models and Their Significance in Speech-Enabled Systems</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. Mahadeva Prasanna</span> <br/>
-            Senior Member IEEE <br/>
-            Indian Institute of Technology, Dharwad <br /> Dharwad, India 
-          </p>
-        </li>
-{/* 
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 3</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Prosody modelling</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. K. Sreenivasa Rao</span> <br/>
-            Member IEEE <br/>
-            Professor,<br /> Department of Computer science and Engineering
-            <br /> Indian Institute of Technology, Kharagpur <br />
-            India 
-          </p>
-        </li> */}
-
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 3</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Speech assistive technologies</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. P. Vijayalakshmi</span> <br/>
-            Senior Member IEEE <br/>
-            Professor and Head, <br /> Department of Electronics and Communication Engineering <br />  
-            Sri Sivasubramaniya Nadar College of Engineering <br />  Chennai, India 
-          </p>
-        </li>
-
-        {/* <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 4</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Multi-lingual and code-switching ASR systems for low resource languages </h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. Prasanta Kumar Ghosh</span> <br/>
-            Member IEEE <br/>
-            Associate Professor, <br /> 
-            Department of Electrical Engineering <br /> Indian Institute of Science, Bangalore <br /> India 
-          </p>
-        </li> */}
-
-        {/* <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 4</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Language models</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Prof. Leena Mary</span> <br/>
-            Professor, <br /> Department of Electronics and communication Engineering
-            <br /> Rajiv Gandhi Institute of Technology,<br /> Kottayam Kerala, India
-
-          </p>
-        </li> */}
-
-        <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 3</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Speech enhancement</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Dr. Deepak</span> <br/>
-            Assistant Professor,<br /> IIIT Dharwad 
-          </p>
-        </li>
-
-        {/* <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-800 dark:text-gray-500">Day 5</time>
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Speaker spoofing and speaker verification</h3>
-          <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            <span className="text-gray-700">Dr. Hemant A Patil</span> <br/>
-            DAIICT, <br /> Ahmedabad, India 
-
-
-          </p>
-        </li> */}
-      </ol>
-    </div>
+  <div>
+  <h1 className='text-center font-bold text-4xl mt-8 mb-8'>Schedule</h1>
+  <VerticalTimeline lineColor="gray">
+        {
+            speakers.map((exp,index)=>(
+                <React.Fragment key={index} >
+                <VerticalTimelineElement
+                contentStyle={{
+                    background: `${exp.bg}`,
+                    boxShadow: "none",
+                    border: "1px solid rgba(0,0,0,0.05)",
+                    textAlign:"left",
+                    padding: "1.3rem"
+                }}
+                date={exp.date}
+                
+                icon={exp.day}
+                iconStyle={{
+                  background: `${exp.icon}`,
+                  fontWeight: "bold",
+                  color:"white",
+                  fontSize: "1rem",
+                  textAlign: 'center',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center' // This is added for vertical centering
+              }}
+              
+                contentArrowStyle={{
+                    borderRight: "0.4rem solid #9ca3af"
+                }}
+                >
+                    <h3 className="font-bold text-2xl capitalize ">{exp.title}</h3>
+                    <p className="font-normal !mt-0 text-md">{exp.speaker}</p>
+                    <p className="!mt-0 text-sm text-slate-600">{exp.uni}</p>
+                    <p className="!mt-0 text-sm text-slate-600">{exp.session}</p>
+                    <p className="!mt-0 text-sm text-slate-600">{exp.date}</p>
+                </VerticalTimelineElement>
+                </React.Fragment>
+            ))
+        }
+    </VerticalTimeline>
+  
+  </div>
   );
 }
 

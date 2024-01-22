@@ -11,7 +11,7 @@ import {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
  
   return (
-    <div className='text-center mt-5 border-gray-100 max-w-5xl mx-auto gap-2'>
+    <div className='text-center mt-5 px-2 border-gray-100 max-w-5xl mx-auto gap-2'>
 
 <h1
         className='text-3xl p-4 font-bold border-b-2 mb-6'>Frequently Asked Questions</h1>

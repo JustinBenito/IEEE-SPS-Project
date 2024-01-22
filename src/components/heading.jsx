@@ -6,7 +6,7 @@ const Heading = () => {
       {/* Apply the frosted background effect with rounded corners and padding using CSS */}
 
       <h1 className='text-4xl p-4 border-gray-200 text-center font-bold relative z-10 '>
-        2023 IEEE SPS Seasonal School <br />
+        2024 IEEE SPS Seasonal School <br />
         on <br />
         Signal Processing Guided Machine Learning Approaches for <br />
         Speech and Audio Applications
