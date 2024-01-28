@@ -1,6 +1,6 @@
 import React from 'react';
 import Mam from '../assets/mam.png'
-import Ramani from '../assets/ramani.jpg'
+import Ramani from '../assets/ramani mam.png'
 import venkat from '../assets/venkat.jpg';
 import actlin from '../assets/actlin.jpg';
 import { useState, useEffect, useRef } from 'react';
