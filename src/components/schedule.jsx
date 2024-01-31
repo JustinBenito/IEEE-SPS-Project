@@ -11,7 +11,7 @@ session: "Forenoon",
 speaker: "Dr. Hema A. Murthy",
 uni: `Professor/CSE \n
 Indian Institute of Technology Madras`,
-title: "Signal Processing Guided Machine Learning",
+title: "Signal Processing guided Machine Learning Algorithms",
 day: "Day-1",
 bg: "#e4f6f8",
 icon: "#0e4c92"
@@ -30,10 +30,10 @@ icon: "#0e4c92"
 {
   date: "06.02.2023 · Tuesday",
   session: "Forenoon",
-  speaker: "Dr. S. R. Mahadeva Prasanna",
-  uni: `Professor/CSE \n
-  Indian Institute of Technology Dharwad`,
-  title: "Speaker Recognition and Machine Learning",
+  speaker: "Dr. G. Anushiya Rachel",
+  uni: `Assistant Professor/CSE,
+  Shiv Nadar University, Chennai`,
+  title: "Towards Human-like speech synthesis?",
   day: "Day-2",
   bg: "#FED7C2",
   icon: "#FF4C00"
@@ -76,10 +76,9 @@ icon: "#0e4c92"
 {
   date: "08.02.2023 · Thursday",
   session: "Forenoon",
-  speaker: "Dr. G. Anushiya Rachel",
-  uni: `Assistant Professor/CSE,
-  Shiv Nadar University, Chennai`,
-  title: "Towards Human-like speech synthesis?",
+  speaker: "Ms. Shwetha Somasundaram",
+  uni: `Research Associate, Adobe`,
+  title: "Large Language Models",
   day: "Day-4",
   bg: "#CFFED5",
   icon: "#2DBD01"
@@ -96,10 +95,20 @@ icon: "#0e4c92"
   bg: "#CFFED5",
   icon: "#2DBD01"
 },
-
 {
   date: "09.02.2023 · Friday",
   session: "Forenoon",
+  speaker: "Dr. S. R. Mahadeva Prasanna",
+  uni: `Professor/CSE \n
+  Indian Institute of Technology Dharwad`,
+  title: "Speaker Recognition and Machine Learning",
+  day: "Day-5",
+  bg: "#fff0f5",
+  icon: "#551a8b"
+},
+{
+  date: "09.02.2023 · Friday",
+  session: "Afternoon",
   speaker: "Dr. K. T. Deepak",
   uni: `Assistant Professor/CSE
   Indian Institute of Information Technology
@@ -110,16 +119,7 @@ icon: "#0e4c92"
   icon: "#551a8b"
 },
 
-{
-  date: "09.02.2023 · Friday",
-  session: "Afternoon",
-  speaker: "Ms. Shwetha Somasundaram",
-  uni: `Research Associate, Adobe`,
-  title: "Large Language Models",
-  day: "Day-5",
-  bg: "#fff0f5",
-  icon: "#551a8b"
-},
+
 ]
 
 

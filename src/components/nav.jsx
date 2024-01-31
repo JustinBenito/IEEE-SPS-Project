@@ -1,8 +1,14 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Nav = React.forwardRef((props, ref) => {
+  const [showSSN, setShowSSN] = useState(false);
+  const navigate = useNavigate();
+
   const onSpeaker = () => {
     console.log(ref)
+    navigate('/');
     // if (ref.current) {
     //   ref.current.scrollIntoView({ behavior: 'smooth' });
     // }
@@ -12,6 +18,14 @@ const Nav = React.forwardRef((props, ref) => {
       targetElement.scrollIntoView({ behavior: 'smooth' }); // You can customize the scrolling behavior
     }
   
+  };
+
+  const onLocation = () => {
+    navigate('/ssn'); // Call the onShowSSN function passed from props
+  };
+
+  const onHome = () => {
+    navigate('/'); // Call the onShowSSN function passed from props
   };
 
 
@@ -68,7 +82,7 @@ const Nav = React.forwardRef((props, ref) => {
     <div className="max-w-screen-xl px-4 py-3 mx-auto">
         <ul className="flex flex-row justify-between items-center w-full font-medium  text-sm">
             <li>
-                <a href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">HOME</a>
+                <a onClick={onHome} className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">HOME</a>
             </li>
             <li>
                 <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
@@ -78,6 +92,9 @@ const Nav = React.forwardRef((props, ref) => {
             </li>
             <li>
                 <a onClick={onRegister} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">REGISTER</a>
+            </li>
+            <li>
+                <a onClick={onLocation} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">HOW TO REACH SSN ?</a>
             </li>
         </ul>
     </div>

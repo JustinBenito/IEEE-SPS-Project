@@ -32,7 +32,7 @@ const speakersData = [
     name: "Dr. S. Umesh",
     imagePath: umesh,
     designation: "Professor",
-    college: "CSE, IIT Madras",
+    college: "EE, IIT Madras",
     profile: "https://www.ee.iitm.ac.in/umeshs/"
   },
   {
