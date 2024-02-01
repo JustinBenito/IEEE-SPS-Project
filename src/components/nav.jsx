@@ -79,21 +79,21 @@ const Nav = React.forwardRef((props, ref) => {
       </nav>
 
       <nav className="bg-gray-50 dark:bg-gray-700">
-    <div className="max-w-screen-xl px-4 py-3 mx-auto">
+    <div className="max-w-screen-xl px-4 py-3 mx-auto  sm:text-base">
         <ul className="flex flex-row justify-between items-center w-full font-medium  text-sm">
-            <li>
-                <a onClick={onHome} className="text-gray-900 dark:text-white hover:underline font-bold capitalize" aria-current="page">HOME</a>
+            <li className='ml-4 text-[10px] md:text-xs  text-center'>
+                <a onClick={onHome} className="text-gray-900 dark:text-white hover:underline font-bold capitalize " aria-current="page">HOME</a>
             </li>
-            <li>
+            <li className='ml-4 text-[10px] md:text-xs  text-center'>
                 <a onClick={onSpeaker} className="text-gray-900 dark:text-white hover:underline font-bold capitalize">SPEAKERS</a>
             </li>
-            <li>
+            <li className='ml-4 text-[10px] md:text-xs  text-center'>
                 <a onClick={openSchedule} href="#" className="text-gray-900 dark:text-white hover:underline font-bold capitalize">ABOUT THE EVENT</a>
             </li>
-            <li>
+            <li className='ml-4 text-[10px] md:text-xs  text-center'>
                 <a onClick={onRegister} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">REGISTER</a>
             </li>
-            <li>
+            <li className='ml-4 text-[10px] md:text-xs  text-center'>
                 <a onClick={onLocation} href="#" className=" text-gray-900 dark:text-white hover:underline font-bold capitalize">HOW TO REACH SSN ?</a>
             </li>
         </ul>
