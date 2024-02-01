@@ -88,7 +88,7 @@ icon: "#0e4c92"
   date: "08.02.2023 · Thursday",
   session: "Afternoon",
   speaker: "Dr. S. Umesh",
-  uni: `Professor/CSE
+  uni: `Professor/EE
   Indian Institute of Technology Madras`,
   title: "Self-supervised Learning Algorithms for Speech Recognition",
   day: "Day-4",
@@ -99,7 +99,7 @@ icon: "#0e4c92"
   date: "09.02.2023 · Friday",
   session: "Forenoon",
   speaker: "Dr. S. R. Mahadeva Prasanna",
-  uni: `Professor/CSE \n
+  uni: `Professor/EE \n
   Indian Institute of Technology Dharwad`,
   title: "Speaker Recognition and Machine Learning",
   day: "Day-5",
@@ -110,7 +110,7 @@ icon: "#0e4c92"
   date: "09.02.2023 · Friday",
   session: "Afternoon",
   speaker: "Dr. K. T. Deepak",
-  uni: `Assistant Professor/CSE
+  uni: `Assistant Professor/ECE
   Indian Institute of Information Technology
   Dharwad`,
   title:"Role of Transformer models in Speech Technology",
