@@ -50,7 +50,7 @@ const Nav = React.forwardRef((props, ref) => {
 
   return (
     <>
-      <nav className="bg-white border-b-4 border-[#005197] dark:bg-gray-900">
+      <nav className="bg-white border-b-4 border-[#005197] dark:bg-gray-900" ref={ref}>
         <div className="max-w-screen-xl gap-4 flex flex-row  items-center justify-center mx-auto p-4">
           <a href="https://www.ssn.edu.in/" className="flex items-center">
             <img

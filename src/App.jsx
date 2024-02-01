@@ -5,17 +5,17 @@ import {
 } from "react-router-dom";
 import NET from 'vanta/src/vanta.net';
 import React, {useEffect, useRef} from "react";
-import Nav from "./components/Nav"; // Import the Nav component
-import Heading from "./components/Heading"; // Import the Heading component
-import Scope from "./components/Scope"; // Import other components as needed
-import Topics from "./components/Topics";
-import Speakers from "./components/Speakers";
-import About from "./components/About";
-import FAQ from "./components/FAQ";
-import Schedule from "./components/Schedule";
-import Organiser from "./components/Organiser";
-import Footer from "./components/Footer";
-import SSN from "./components/SSN";
+import Nav from "./components/nav"; // Import the Nav component
+import Heading from "./components/heading"; // Import the Heading component
+import Scope from "./components/scope"; // Import other components as needed
+import Topics from "./components/topics";
+import Speakers from "./components/speakers";
+import About from "./components/about";
+import FAQ from "./components/faq";
+import Schedule from "./components/schedule";
+import Organiser from "./components/organiser";
+import Footer from "./components/footer";
+import SSN from "./components/ssn";
 
 function App() {
   const location = useLocation();
